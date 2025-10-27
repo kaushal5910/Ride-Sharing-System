@@ -1,58 +1,76 @@
 🚗 Ride Sharing System — C++ OOP Project
 
-A console-based Ride Sharing Platform inspired by services like Ola and Uber, fully developed using Object-Oriented Programming (OOP) principles in C++.
-This project simulates real-world ride booking, driver assignment, and fare estimation — demonstrating strong concepts like encapsulation, inheritance, polymorphism, abstraction, composition, and more.
+A console-based Ride Sharing Platform inspired by Ola/Uber, developed entirely using Object-Oriented Programming (OOP) principles in C++. This project showcases real-world ride booking, driver assignment, fare estimation, and a mutual rating system.
 
 🎯 Project Overview
 
-This system enables users to:
+This system allows users to:
 
-✅ Enter personal and trip details
-✅ Choose a preferred vehicle type (Bike / Auto / Car)
-✅ View fare estimations instantly
-✅ Get a randomly assigned driver
-✅ Rate driver after completion — and get rated back ✅
+Enter personal and trip details
 
-The design follows a clean OOP architecture that mirrors real-world ride-sharing logic.
+Choose vehicle type: Bike, Auto, or Car
+
+Get instant fare estimations
+
+Get randomly assigned drivers
+
+Rate the driver and receive a rating back
 
 🧠 OOP Concepts Implemented
-Concept	What This Project Demonstrates
-Encapsulation	User, Driver, Vehicle, and Ride handle their own logic/data
-Abstraction	Fare calculations & internal logic hidden from main flow
-Inheritance	Driver & User extend the abstract Person base class
-Polymorphism	Virtual methods allow dynamic vehicle behavior
-Operator Overloading	<, >, == used to compare driver rating and fares
-Function Overloading	Multiple rating/input methods
-Templates	Generic function prints lists of objects
-Composition	Ride contains User and Driver objects
-Dynamic Memory Allocation	Rides created & destroyed using new and delete
+
+Encapsulation: Driver, User, Vehicle, Ride classes manage their own data
+
+Abstraction: Complex fare logic hidden behind simple methods
+
+Inheritance: Driver and User extend an abstract Person class
+
+Polymorphism: Vehicle behavior handled using virtual functions
+
+Operator Overloading: Compare driver ratings and fares using <, >, ==
+
+Function Overloading: Multiple input and rating functions
+
+Templates: Generic method to print vectors of any type
+
+Composition: Ride contains Driver and User objects
+
+Dynamic Memory Allocation: new and delete used for creating rides
+
 🏗 System Architecture
 
-Person (Abstract)
+Includes the following major classes:
 
-→ User
+Person (Abstract Base Class)
 
-→ Driver (with vehicle + rating)
+User
 
-Vehicle (Bike, Auto, Car — different fare models)
+Driver
 
-Ride (distance, calculated fare, assigned driver)
+Vehicle (Bike, Auto, Car)
 
-RideService (core controller: booking → assignment → billing)
+Ride (handles distance & fare)
+
+RideService (controls overall trip process)
 
 🌟 Key Features
 
-✨ Real-time fare estimation
-🚫 Ride validation (limit passenger count / distance based on vehicle)
-🎯 Best & cheapest ride suggestion
-👥 Mutual driver-user rating system
-📌 Driver details generated from dataset
+Fare calculated using distance + vehicle type
 
-🔁 Booking Workflow
+Suggests cheapest ride option
 
-1️⃣ User enters trip and passenger details
-2️⃣ System estimates fare for all vehicle types
-3️⃣ Suggests optimal ride based on cost and rules
-4️⃣ Displays assigned driver info
-5️⃣ calculates final fare 💰
-6️⃣ Ratings exchanged after ride ⭐
+Restrictions: passenger count / distance based on vehicle
+
+Random driver assignment from stored list
+
+Clean OOP modular design
+
+Mutual rating system
+
+🔁 Booking Flow
+
+1️⃣ User enters trip details
+2️⃣ System calculates estimated fare
+3️⃣ Best ride option is suggested
+4️⃣ Driver gets assigned
+5️⃣ Final fare displayed
+6️⃣ User and driver rate each other
