@@ -1,0 +1,10 @@
+John,Bike,Yamaha MT-15,4.7
+Alice,Car,Toyota Corolla,4.9
+Bob,Auto,Bajaj RE,4.5
+Charlie,Car,Honda Civic,4.3
+Daisy,Bike,KTM Duke,4.8
+Ethan,Auto,Tuk Tuk,4.6
+Fiona,Car,Hyundai Verna,4.4
+George,Bike,Royal Enfield,4.2
+Hannah,Auto,Piaggio Ape,4.5
+Ian,Car,Maruti Suzuki Swift,4.7
