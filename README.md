@@ -69,9 +69,15 @@ Mutual rating system
 ## 🔁 Booking Flow
 
 1️⃣ User enters trip details
+
 2️⃣ System calculates estimated fare
+
 3️⃣ Best ride option is suggested
+
 4️⃣ Driver gets assigned
+
 5️⃣ Final fare displayed
+
 6️⃣ User and driver rate each other
+
 
